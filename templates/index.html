@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>To-Do</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='newtodo.ico') }}" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 </head>
-<body>
+<body style="background-color:black;">
 <div style="margin-top: 50px" class="ui center container">
-    <h1 class="ui center aligned huge header">Todo App</h1>
+    <h1 style="font-size:60px;font-family:Times;color:white"  class="ui center aligned huge header">Todo App</h1>
 
     <form class="ui form" action="/add" method="POST">
         <div class="field">
-            <label> Add Task</label>
+            <label style="color:white"> Add Task</label>
             <input type="text" name="title" placeholder="Enter your task" required>
             <br><br>
             <input type="text" name="description" placeholder="Add description (optional)">
