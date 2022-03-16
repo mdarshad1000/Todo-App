@@ -4,8 +4,8 @@ from datetime import datetime
 
 # Initializing the Flask app and Sqlite database
 app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABSE_URI'] = 'sqlite:///db.sqlite'
-app.config['SQLALCHEMY_DATABSE_URI'] = ' postgresql://jybtlsqpgrgidr:4b0f64f3753a78a8f65532ad706ecb75361b5f325e3f90497f3c8d131ff69cf0@ec2-44-194-167-63.compute-1.amazonaws.com:5432/d527sncsi3d12h'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://jtvpbiouxilwft:207c6ea470445eafab645295c9a918628a639c90ae7b10f8fd29d7165fe95931@ec2-34-224-226-38.compute-1.amazonaws.com:5432/dbehepvnbo0mps'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
